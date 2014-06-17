@@ -28,6 +28,8 @@ class ActorsController < ApplicationController
     @actor.destroy
     redirect_to actors_path
   end
+  
+  #a change
 
   def update
     @actor= Actor.find(params[:id])
