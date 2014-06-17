@@ -1,0 +1,8 @@
+<h3>Edit Actor</h3>
+
+<%= form_for @actor, url: actor_path do |form|%>
+  <%= form.label :Enter_new_name %>
+  <%= form.text_field :name %>
+  <br>
+  <%= form.submit "Save"%>
+<% end %>

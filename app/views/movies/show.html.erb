@@ -1,0 +1,15 @@
+<h1><%= @movie.name%></h1>
+<% @movie_actors.includes(:actor).each do |movie_actor|%>
+  <pre>
+  <%= movie_actor.actor.name%>               <%= movie_actor.role%>
+  </pre>
+<% end %>
+<% if user_signed_in? %>
+  <%= simple_form_for currrent_user do |f|%>
+    <%= %>
+  <%end%>
+  <br>  
+<%end%>
+<%= link_to "Edit", edit_movie_path%>
+<br>
+<%= link_to "Delete", movie_path, method: :delete%>

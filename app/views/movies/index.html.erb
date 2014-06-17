@@ -1,0 +1,8 @@
+<h1>Movie Database</h1>
+<% @movies.each do |movie|%>
+  <%= link_to movie.name, movie %>
+<% end %>
+<br>
+<%= link_to "Add new Movie", new_movie_path %>
+<br>
+<h3><%= link_to "All Actors", actors_path %></h3> 

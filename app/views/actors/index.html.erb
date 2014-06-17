@@ -1,0 +1,6 @@
+
+<% @actors.each do |actor|%>
+  <%= link_to actor.name, actor %>
+<% end %>
+<br>
+<%= link_to "Add new actor", new_actor_path %>
