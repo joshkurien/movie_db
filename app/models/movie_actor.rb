@@ -4,4 +4,5 @@
 
 	validates_associated :actor, :movie
 	validates_presence_of :actor, :movie
+	
 end
